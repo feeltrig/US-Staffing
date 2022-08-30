@@ -19,14 +19,15 @@ import { FaFontAwesome } from 'react-icons/fa';
 
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
-const HeaderComponent = () => {
-  const linkdata = [
-    { title: 'Home', path: '/' },
-    { title: 'Services', path: '/Services' },
-    { title: 'About', path: '/About' },
-    { title: 'Contact us', path: '/Contactus' },
-  ];
+// link data
+export const linkdata = [
+  { title: 'Home', path: '/' },
+  { title: 'Services', path: '/Services' },
+  { title: 'About', path: '/About' },
+  { title: 'Contact us', path: '/Contactus' },
+];
 
+const HeaderComponent = () => {
   return (
     <>
       <Box h="4rem" px={'5rem'} bg="purple.900">
