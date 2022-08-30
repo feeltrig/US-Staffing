@@ -7,3 +7,4 @@
 1. created header
 2. created homepage
 3. create footer
+4. create contact us page
