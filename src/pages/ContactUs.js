@@ -1,10 +1,13 @@
 import {
   Box,
+  Button,
   Container,
   Heading,
   HStack,
   Image,
   Input,
+  Stack,
+  Text,
   Textarea,
   VStack,
 } from '@chakra-ui/react';
@@ -22,35 +25,50 @@ import ContactImg from '../assets/photos/contactus.jpg';
 
 const ContactUs = () => {
   return (
-    <Container minW="100%" minH={'100vh'} m={0} p="0" position={'relative'}>
-      <HStack w={'full'} h="full" justify={'center'} align={'center'} gap={0}>
-        {/* form */}
-        <VStack
-          h="full"
-          bg={'purple.800'}
-          align="center"
-          textAlign={'left'}
-          justify="center"
-          p="0"
-          m="0"
-          w="max-content"
-        >
-          <FormControl color="white" p="5rem">
-            <Heading my="2rem">Contact Us</Heading>
+    <Box
+      display={'flex'}
+      w={'full'}
+      h="100vh"
+      flexDirection={'row'}
+      justify="center"
+      position={'relative'}
+    >
+      <VStack
+        h="full"
+        w="full"
+        justify={'center'}
+        bg="gray.100"
+        flexGrow={1}
+        px="5rem"
+      >
+        <FormControl w="full" display={'flex'} flexFlow="column" gap="0.5rem">
+          <Heading mb="1rem">Contact Us</Heading>
+          <Box>
             <FormLabel>First name</FormLabel>
-            <Input type="text" />
-            <FormLabel>Email address</FormLabel>
-            <Input type="email" />
-            <FormHelperText>We'll never share your email.</FormHelperText>
-            <FormLabel mt="1rem">Message</FormLabel>
-            <Textarea placeholder="Your message..." size="sm" resize={'none'} />
-          </FormControl>
-        </VStack>
-        <Box h="full" display={'flex'} w="">
-          <Image src={ContactImg} w="20rem" p="0" m="0" h="full" />
-        </Box>
-      </HStack>
-    </Container>
+            <Input borderColor={'black'} type={'text'} />
+          </Box>
+          <Box>
+            <FormLabel>Email</FormLabel>
+            <Input borderColor={'black'} type={'email'} />
+            <FormHelperText>We wont share your email</FormHelperText>
+          </Box>
+          <Box>
+            <FormLabel>Message</FormLabel>
+            <Textarea borderColor={'black'} resize={'none'} />
+            <Button my="0.5rem" variant={'solid'} colorScheme="purple">
+              Send
+            </Button>
+          </Box>
+        </FormControl>
+      </VStack>
+
+      <VStack
+        flexGrow={1}
+        w="full"
+        backgroundImage={ContactImg}
+        backgroundSize="cover"
+      ></VStack>
+    </Box>
   );
 };
 

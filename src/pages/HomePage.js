@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Container,
   Divider,
   Heading,
@@ -52,6 +53,9 @@ const HomePage = () => {
             <Heading as={'h1'} size="3xl" color={'white'}>
               worldwide
             </Heading>
+            <Button my="1rem" variant={'outline'} colorScheme="linkedin">
+              Get Started
+            </Button>
           </Box>
         </VStack>
 
@@ -64,7 +68,7 @@ const HomePage = () => {
           // border="2px solid yellow"
           justify={'space-around'}
         >
-          <VStack alignItems={'flex-start'}>
+          <VStack gap="1rem" alignItems={'flex-start'}>
             <Box>
               <Text as={'i'}>HOW WE WORK</Text>
               <Heading as={'h1'} size="3xl">
@@ -74,7 +78,6 @@ const HomePage = () => {
                 Your Goal
               </Heading>
             </Box>
-            <Divider w={'10rem'} color="black" />
 
             <List spacing={3}>
               <ListItem>
