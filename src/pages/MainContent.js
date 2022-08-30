@@ -3,17 +3,14 @@ import { Route, Routes } from 'react-router';
 
 // PAGES
 import ProtectedRoutes from './ProtectedRoutes';
-import { BrowserRouter } from 'react-router-dom';
 import HomePage from './HomePage';
 
 const MainContent = () => {
   return (
-    <div className="mainContent">
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/user/*" element={<ProtectedRoutes />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/user/*" element={<ProtectedRoutes />} />
+    </Routes>
   );
 };
 

@@ -14,17 +14,12 @@ function App() {
     <ChakraProvider theme={theme}>
       <div className="mainAppContainer">
         <ContextProvider>
-          <HeaderComponent />
-
           <Router>
-            <Container
-              display={'flex'}
-              flexGrow="1"
-              minW={'100%'}
-              border="2px solid yellow"
-            >
+            <HeaderComponent />
+            <Container display={'flex'} flexGrow="1" minW={'100%'} m="0" p="0">
               <MainContent />
             </Container>
+            <FooterComponent />
           </Router>
         </ContextProvider>
       </div>
