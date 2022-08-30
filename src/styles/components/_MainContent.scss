@@ -1,0 +1,6 @@
+.mainContent {
+  min-height: calc(100vh - $headerHeight - $footerHeight);
+  width: 100%;
+  position: relative;
+  @include flexcenter();
+}

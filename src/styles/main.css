@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: poppins;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.HeaderComponent {
+  height: 3rem;
+  width: 100%;
+  padding-block: 0.5rem;
+  padding-inline: 5rem;
+}
+
+footer {
+  height: 3rem;
+}
+
+.mainContent {
+  min-height: calc(100vh - 3rem - 3rem);
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainAppContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=main.css.map */

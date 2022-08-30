@@ -1,0 +1,15 @@
+// IMPORTS
+@import './config';
+@import './resets';
+@import './components/HeaderComponent.scss';
+@import './components/FooterComponent.scss';
+@import './components/MainContent';
+
+// GLOBALS
+
+.mainAppContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
